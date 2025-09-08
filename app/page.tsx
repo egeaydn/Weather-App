@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface WeatherData {
   city: string;
@@ -44,7 +45,6 @@ interface ForecastData {
 }
 
 const API_KEY = "4829a94824a84f74b1ce56c06d1618f1";
-
 
 export default function WeatherApp() {
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
@@ -143,11 +143,11 @@ export default function WeatherApp() {
                   <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
                 </svg>
               </div>
-              <div className="w-8 h-8 hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer">
-                <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              <Link href="/docs" className="w-8 h-8 hover:bg-gray-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors">
+                <svg className="w-5 h-5 text-gray-400 hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
                 </svg>
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -391,8 +391,6 @@ export default function WeatherApp() {
                     </div>
                   </div>
                 )}
-
-               
               </div>
             )}
           </div>
