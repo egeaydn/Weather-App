@@ -1,50 +1,50 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Weather App",
+  description: "Modern weather forecasting application with beautiful design.",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Forecast",
+      href: "/forecast",
+    },
+    {
+      label: "Maps",
+      href: "/maps",
+    },
+    {
+      label: "About",
+      href: "/about",
     }
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Current Weather",
+      href: "/",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "7-Day Forecast",
+      href: "/forecast",
     },
     {
-      label: "Projects",
-      href: "/projects",
+      label: "Weather Maps",
+      href: "/maps",
     },
     {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
+      label: "Favorites",
+      href: "/favorites",
     },
     {
       label: "Settings",
       href: "/settings",
     },
     {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "About",
+      href: "/about",
     },
   ],
   links: {
