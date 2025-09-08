@@ -267,7 +267,7 @@ Projeye katkıda bulunmak isterseniz:
 
 | 📧 Email | 🐛 Issues | 💬 Discussions |
 |:--------:|:---------:|:--------------:|
-| [egeaydin@example.com](#) | [GitHub Issues](#) | [GitHub Discussions](#) |
+| [egeaydin@ogr.iu.edu.tr](#) | [GitHub Issues](#) | [GitHub Discussions](#) |
 
 ### 🌟 **Projeyi Beğendiniz Mi?**
 ⭐ **Star** vererek destekleyebilirsiniz!
