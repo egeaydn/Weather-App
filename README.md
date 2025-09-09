@@ -10,8 +10,10 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-orange?style=for-the-badge)](https://openweathermap.org/)
+[![next-intl](https://img.shields.io/badge/next--intl-v4.3.7-green?style=for-the-badge)](https://next-intl-docs.vercel.app/)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://weather-app-nine-iota-10.vercel.app)
 
-[🚀 Demo'yu Dene](#) • [📋 Docs](./app/docs) • [🐛 Bug Bildir](#) • [💡 Özellik İste](#)
+[🚀 Live Demo](https://weather-app-nine-iota-10.vercel.app) • [📋 Docs](./app/docs) • [🐛 Bug Bildir](#) • [💡 Özellik İste](#)
 
 </div>
 
@@ -27,8 +29,14 @@ Koyu tema, glass morphism efektleri ve responsive tasarım ile mükemmel kullan�
 ### 🌍 **Gerçek Zamanlı Hava Durumu**
 OpenWeatherMap API ile anlık, güvenilir ve doğru hava durumu verileri
 
+### 🌐 **Çoklu Dil Desteği (i18n)**
+next-intl ile Türkçe ve İngilizce dil desteği
+
 ### 📱 **Tam Responsive**
 Masaüstü, tablet ve mobil cihazlarda kusursuz görünüm
+
+### ☁️ **Vercel ile Deploy**
+Hızlı ve güvenilir global deployment
 
 </div>
 
@@ -108,11 +116,20 @@ pnpm install
 - **🔷 TypeScript** - Tip güvenliği ve geliştirici deneyimi
 - **🎨 Tailwind CSS** - Utility-first CSS framework
 - **🌟 HeroUI** - Modern React component library
+- **🌐 next-intl** - Uluslararasılaştırma (i18n) desteği
+- **☁️ Vercel** - Serverless deployment ve hosting
 
 ### 🌐 **API & Data:**
 - **🌤️ OpenWeatherMap API** - Güncel hava durumu verileri
 - **📊 5-Day Forecast** - Haftalık hava durumu tahminleri
 - **🇹🇷 Turkish Cities** - 15+ Türk şehri desteği
+- **🌍 Multi-language** - TR/EN dil desteği
+
+### 🚀 **Deployment:**
+- **📦 Vercel Platform** - Otomatik Git entegrasyonu
+- **🌐 Global CDN** - Dünya çapında hızlı erişim
+- **⚡ Edge Functions** - Serverless computing
+- **🔒 SSL Certificate** - Güvenli HTTPS bağlantısı
 
 ---
 
@@ -144,6 +161,14 @@ pnpm install
 - 📱 Tam responsive tasarım
 - ⚡ Smooth animasyonlar
 - 🎯 Kullanıcı dostu arayüz
+- 🌐 Çoklu dil desteği (TR/EN)
+- 🔗 SEO optimize edilmiş
+
+### 🚀 **Live Demo & Deployment**
+- **🌐 Live Site:** [https://weather-app-nine-iota-10.vercel.app](https://weather-app-nine-iota-10.vercel.app)
+- **📍 Turkish Version:** [/tr](https://weather-app-nine-iota-10.vercel.app/tr)
+- **📍 English Version:** [/en](https://weather-app-nine-iota-10.vercel.app/en)
+- **☁️ Hosted on Vercel** - Otomatik deployment ve global CDN
 
 ---
 
@@ -152,9 +177,12 @@ pnpm install
 ```
 Weather-App/
 ├── 📂 app/                    # Next.js App Router
-│   ├── 📄 page.tsx           # Ana sayfa
+│   ├── 📄 page.tsx           # Redirect to locale
 │   ├── 📄 layout.tsx         # Root layout
 │   ├── 📄 providers.tsx      # Context providers
+│   ├── 📂 [locale]/          # Internationalization routes
+│   │   ├── 📄 page.tsx       # Main weather app
+│   │   └── 📄 layout.tsx     # Locale-specific layout
 │   └── 📂 docs/              # Dokümantasyon
 │       ├── 📄 page.tsx       # Docs sayfası
 │       └── 📄 layout.tsx     # Docs layout
@@ -162,9 +190,18 @@ Weather-App/
 │   ├── 📄 navbar.tsx         # Navigation bar
 │   ├── 📄 theme-switch.tsx   # Tema değiştirici
 │   └── 📄 icons.tsx          # SVG ikonları
+├── 📂 i18n/                  # Internationalization
+│   ├── 📄 routing.ts         # Locale routing config
+│   ├── 📄 request.ts         # Server-side i18n config
+│   └── 📄 navigation.ts      # Localized navigation
+├── 📂 messages/              # Translation files
+│   ├── 📄 en.json            # English translations
+│   └── 📄 tr.json            # Turkish translations
 ├── 📂 config/                # Yapılandırma dosyaları
 │   ├── 📄 site.ts            # Site konfigürasyonu
 │   └── 📄 fonts.ts           # Font ayarları
+├── 📄 middleware.ts          # next-intl middleware
+├── 📄 next-intl.config.js    # i18n configuration
 ├── 📂 assets/                # Statik dosyalar
 │   └── 🖼️ *.png              # Logo ve görseller
 ├── 📂 public/                # Public assets
@@ -192,6 +229,31 @@ npm run lint
 # Type checking
 npm run type-check
 ```
+
+## 🌐 Çoklu Dil Desteği (i18n)
+
+Uygulama **next-intl** kullanarak tam çoklu dil desteği sunmaktadır:
+
+### 🌍 **Desteklenen Diller:**
+- 🇹🇷 **Türkçe** - `/tr` route'u
+- 🇬🇧 **İngilizce** - `/en` route'u
+
+### 🔧 **i18n Konfigürasyonu:**
+```typescript
+// i18n/routing.ts
+export const routing = defineRouting({
+  locales: ['en', 'tr'],
+  defaultLocale: 'en'
+});
+```
+
+### 📝 **Çeviri Dosyaları:**
+- `messages/en.json` - İngilizce çeviriler
+- `messages/tr.json` - Türkçe çeviriler
+
+### 🎯 **URL Yapısı:**
+- `https://weather-app-nine-iota-10.vercel.app/tr` - Türkçe
+- `https://weather-app-nine-iota-10.vercel.app/en` - İngilizce
 
 ---
 
