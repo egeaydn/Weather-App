@@ -1,0 +1,22 @@
+[
+    {
+        "Homepage": "parçalı az bulutlu",
+        "About": "Hakkında",
+        "Contact": "İletişim",
+        "UV Index": "UV İndeksi",
+        "Wind Status": "Rüzgar Durumu",
+        "Sunrise & Sunset": "Gün Doğumu & Batımı",
+        "Humidity": "Nem",
+        "Visibility": "Görüş Mesafesi",
+        "Feels Like": "Hissedilen Hava Durumu",
+        "Map": "Haritası",
+        "Today": "Bugün",
+        "Tuesday": "Salı",
+        "Wednesday": "Çarşamba",
+        "Friday": "Cuma",
+        "Saturday": "Cumartesi",
+        "Sunday": "Pazar",
+        "Thursday": "Perşembe",
+        "Monday": "Pazartesi"
+    }
+]
