@@ -1,22 +1,22 @@
-[
-    {
-        "Homepage": "partly cloudy",
-        "About": "About",
-        "Contact": "Contact",
-        "UV Index": "UV Index",
-        "Wind Status": "Wind Status",
-        "Sunrise & Sunset": "Sunrise & Sunset",
-        "Humidity": "Humidity",
-        "Visibility": "Visibility",
-        "Feels Like": "Perceived Weather Conditions",
-        "Map": "Map",
-        "Today": "Today",
-        "Tuesday": "Tuesday",
-        "Wednesday": "Wednesday",
-        "Friday": "Friday",
-        "Saturday": "Saturday",
-        "Sunday": "Sunday",
-        "Thursday": "Thursday",
-        "Monday": "Monday"
-    }
-]
+{
+ "Homepage": "partly cloudy",
+ "About": "About",
+ "Contact": "Contact",
+ "UV Index": "UV Index",
+ "Wind Status": "Wind Status",
+ "Sunrise & Sunset": "Sunrise & Sunset",
+ "Humidity": "Humidity",
+ "Visibility": "Visibility",
+ "Feels Like": "Perceived Weather Conditions",
+ "Map": "Map",
+ "Today": "Today",
+ "Tuesday": "Tuesday",
+ "Wednesday": "Wednesday",
+ "Friday": "Friday",
+ "Saturday": "Saturday",
+ "Sunday": "Sunday",
+ "Thursday": "Thursday",
+ "Monday": "Monday",
+ "welcome": "Welcome",
+ "logout": "Logout"
+}
